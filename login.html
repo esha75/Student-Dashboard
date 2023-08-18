@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link href="CSS/login.css" rel="stylesheet" typr="text/csss"/>
+	<link href="CSS/Sd.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<script src="https://kit.fontawesome.com/d8d8e29725.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div id=outer style="height: 580px;">
+		<div id="head" style=" height: 6%; ">
+			<div id="hl">
+				<div id="p"></div>
+				<div id="t"> GOEL STUDENT DASHBOARD</div>
+
+			</div>
+			<div id="hr">
+				<ul>
+					<li><a href="login.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+					<li><a href="login.html"><i class="fa-solid fa-calendar-days"></i> TIME TABLE</a></li>
+					<li><a href="login.html"><i class="fa-solid fa-border-all"></i> EXAMINATION</a></li>
+					<li><a href="login.html"><i class="fa-solid fa-lock"></i> CHANGE PASSWORD</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a></li>
+			</div>
+		</div>
+	<div id='login-form' class='login-page'>
+		<div class="form-box">
+			<div class='button-box'>
+				<div id='btn'></div>
+				<button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+				<button type='button' onclick='register()' class='toggle-btn'>Register</button>
+			</div>
+			<form id='login' class='input-group-login' >
+				<input type='text' class='input-field' placeholder='Email Id' required>
+				<input type='password' class='input-field' placeholder='Enter Password' required>
+				<input type='checkbox' class='check-box'><span>Remember Password</span>
+				<a href="Sd.html" style="text-decoration: none;" ><button type='button' class='submit-btn' >Log in</button></a>
+			</form>
+			<form id='register' class='input-group-register'>
+				<input type='text' class='input-field' placeholder='First Name' required>
+				<input type='text' class='input-field' placeholder='Last Name ' required>
+				<input type='email' class='input-field' placeholder='Email Id' required>
+				<input type='password' class='input-field' placeholder='Enter Password' required>
+				<input type='password' class='input-field' placeholder='Confirm Password' required>
+				<input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+				<button type='button'class='submit-btn' onclick="login()">Register</button>
+		</div>
+	</div>
+</div>
+	<script>
+		var x = document.getElementById('login');
+		var y = document.getElementById('register');
+		var z = document.getElementById('btn');
+		function register() {
+			x.style.left = '-400px';
+			y.style.left = '50px';
+			z.style.left = '110px';
+		}
+		function login() {
+			x.style.left = '50px';
+			y.style.left = '450px';
+			z.style.left = '0px';
+		}
+	</script>
+
+</body>
+
+</html>
